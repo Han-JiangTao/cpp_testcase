@@ -6,6 +6,7 @@ set(PYTHON_LIB /usr/local/python3/lib/libpython3.7m.a)
 
 set(source_files
     main.cpp
+    ${PROJECT_SOURCE_DIR}/common/timer.cpp
 )
 
 add_executable(cpp_testcase 
@@ -17,6 +18,7 @@ message("TOPDIR: ${PROJECT_SOURCE_DIR}")
 # include path
 include_directories (
     ${PYTHON_INCLUDES}
+    ${PROJECT_SOURCE_DIR}/common
 )
 
 # link so
